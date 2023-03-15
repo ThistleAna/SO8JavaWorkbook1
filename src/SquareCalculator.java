@@ -1,10 +1,13 @@
 //WORKBOOK 1, 2A
-
+import java.util.Scanner;
 public class SquareCalculator {
     public static void main(String[] args) {
-        // Declare and assign the width and the height
-        double width = 13.5;
-        double height = 25.3;
+        Scanner reader = new Scanner(System.in);
+        // ask user to enter the width and the height
+        System.out.println("Enter the width = ");
+        double width = reader.nextDouble();
+        System.out.println("Enter the height = ");
+        double height = reader.nextDouble();
 
         // printout these details
         System.out.println("Rectangle width = " + width);
